@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "quak"
+version = "0.1.0"
+description = "Create the smartest dummy datasets!"
+authors = ["Xavier Gill <xaviercgill@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "quak"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.3"
+numpy = "*"
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+pytest-mock = "*"
+pytest-cov = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
