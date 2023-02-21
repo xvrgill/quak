@@ -10,12 +10,18 @@ packages = [{include = "quak"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 pandas = "^1.5.3"
-numpy = "*"
+numpy = "^1.24.2"
+rich = "^13.3.1"
 
 [tool.poetry.group.test.dependencies]
-pytest = "*"
-pytest-mock = "*"
-pytest-cov = "*"
+pytest = "^7.2.1"
+pytest-mock = "^3.10.0"
+pytest-cov = "^4.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^3.6.1"
+docopt = "0.6.2"
 
 [build-system]
 requires = ["poetry-core"]
